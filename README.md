@@ -2,6 +2,8 @@
 
 Template repository for creating GitHub actions based on Dockerfile.
 
+Push you image to DockerHub or use `image: 'Dockerfile'` in `action.yaml` if you want to build a Docker image each time you run the Action.
+
 ## Inputs
 
 ### `input_foo`
