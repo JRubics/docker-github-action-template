@@ -1,0 +1,20 @@
+name: "Your action name"
+author: "@<Your GitHub username>"
+description: "Your action description"
+branding:
+  icon: "copy" # https://actions-cool.github.io/github-action-branding/
+  color: "gray-dark" # https://actions-cool.github.io/github-action-branding/
+inputs:
+  input_foo:
+    description: "Some description"
+    required: true
+    default: "bar"
+  input_bar:
+    description: "Some description"
+    required: false
+runs:
+  using: "docker"
+  image: "docker://<docker image>:<image tag>"
+  args:
+    - ${{ inputs.input_foo }}
+    - ${{ inputs.input_bar }}
